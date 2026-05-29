@@ -14,6 +14,12 @@ const seconds=now.getSeconds()
     const month=now.getMonth()+1
     const year=now.getFullYear()
 
+ let ampm;
+ if (!ishours24){
+    ampm = hours >=12 ? "PM" : "AM";
+    hours= hours % 12 || 12;
+}
+
   const formattedTime =  
   String(hours).padStart(2,"0")+":" +
  String (minutes).padStart(2,"0") + ":" +
@@ -23,13 +29,6 @@ const seconds=now.getSeconds()
  const displayDate=
 String (date).padStart(2,"0") + "/"+
 String(month).padStart(2,"0")+"/"+ year;
-
-
- let ampm;
- if (!ishours24){
-    ampm = hours >=12 ? "PM" : "AM";
-    hours= hours % 12 || 12;
-}
 
 const displayTime= ishours24 ? formattedTime : formattedTime + " " + ampm;
 timeElement.textContent= displayTime;
