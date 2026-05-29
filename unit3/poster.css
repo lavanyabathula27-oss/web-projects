@@ -1,0 +1,70 @@
+@font-face {
+    font-family:roboto ;
+    src: url(/FONTS/ROBOTO.ttf);
+}
+
+@font-face {
+    font-family:poppins ;
+    src: url(/FONTS/Poppins.ttf);
+}
+
+
+
+
+body{
+    background-color: black;
+}   
+.container{
+    height: 400px;
+    width: auto;
+   display:flex ;
+   flex-direction : row-wrap ;
+   flex-wrap: wrap ;
+   
+
+   
+}
+
+.poster {
+       
+    h3{
+        font-family:  roboto, poppins ;
+        font-size: 1.1rem;
+        color:white;
+        margin: 10px 0 5px 0;
+        padding: 5px;
+        text-align: center;
+}
+ p{
+    font-family:  roboto, poppins ;
+    font-size: 1.1rem;
+    color:lightgray;
+    margin: 10px 0 5px 0;
+    padding: 5px;
+    text-align: center;
+}
+
+img {   
+height: auto;
+max-width: 250px;
+border-radius: 12px;
+box-shadow:0 5px 15px rgba(255, 255, 255, 0.1);
+flex: 1 1 200px;
+padding: 10px;
+margin: 5px;
+}
+}
+
+.poster:hover{
+    transform: scale(1.08);
+    transition: transform 0.3s ease;    
+    
+}
+
+
+
+
+
+
+
+

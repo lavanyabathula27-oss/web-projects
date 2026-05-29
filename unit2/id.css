@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(rgb(97, 4, 4), rgb(193, 96, 96),rgb(206, 145, 145));
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card{
+  max-width: 340px;
+  border: 2px solid gray;
+  border-radius: 15px;
+padding: 20px;
+background-color: white;
+box-shadow :( 0 12px 28px rgba(195, 183, 183, 0.45));
+position:static
+}
+
+.card-header{
+  background: linear-gradient(royalblue,rgb(152, 173, 238));
+  Padding: 28px 0 100px;
+text-align: center;
+color: white;
+font-size: 20px;
+}
+
+.photo{
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  object-fit:cover;
+  height: 125px;
+}
+
+.photo-wrap{
+
+  position: fixed;
+  bottom:450px;
+  left: 790px;
+transform:translateX(70%); 
+
+height: 140px;
+width: 140px; 
+background-color: lightgray; 
+border: 2px solid lightgray ; 
+border-radius : 50px; 
+display:flex ;
+justify-content: center;
+align-items: center;
+box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+} 
+
+.card-body{
+  padding:90px 24px 20px;
+  text-align: center
+}
+
+.student-name{
+  font-size: large ,bold;
+  color:#0b2742;
+  margin-bottom: 6px;
+}
+
+.college{
+  font-size: medium;
+  color:#334155
+}
+
+.divider{
+margin: 20px;
+ width: auto;
+ border-top: 1px solid #e6e9ee;
+}
+
+.details{
+  color:#344154;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.id-line{
+  border: 1px solid white;
+  background-color: royalblue;
+  color:white;
+  padding: 8px 14px;
+border-radius: 6px;
+display: inline-block;
+font-weight: 700;
+}
+.id-label{
+  margin-right: 6px;
+ opacity:0.9;
+font-weight :600 ;
+
+}
+
+.barcode{
+ margin: 18px auto 8px;
+ width: 60%;
+ height: 32px ;
+background-image:repeating-linear-gradient(90deg, black 0 4px, white 4px 8px);
+}
+.card-footer{
+  background: #f9fafb;
+ Padding: 10px 18px ;
+text-align :center;
+ border-top:1px solid #e6e9ee;
+ font-size:smaller;
+}
