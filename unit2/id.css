@@ -21,7 +21,7 @@ padding: 0;
 padding: 20px;
 background-color: white;
 box-shadow :( 0 12px 28px rgba(195, 183, 183, 0.45));
-position:static
+position:relative;
 }
 
 .card-header{
@@ -41,10 +41,10 @@ font-size: 20px;
 
 .photo-wrap{
 
-  position: fixed;
-  bottom:450px;
-  left: 790px;
-transform:translateX(70%); 
+ position: absolute;
+  top:200px;
+  left: 50%;
+transform:translateX(-50%); 
 
 height: 140px;
 width: 140px; 
